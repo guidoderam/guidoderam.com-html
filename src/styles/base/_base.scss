@@ -8,14 +8,24 @@ body {
 }
 
 section {
-    padding: 45px 0;
+    padding: 2rem 0;
+    
+    &:first-of-type {
+        padding-top: 50px;
+    }
+
+    @media (min-width: $breakpoint-md) {
+        &:first-of-type {
+            padding-top: 2rem;
+        }
+    }
 
     .container {
         .heading {
             text-align: center;
 
             @media (min-width: $breakpoint-md) {
-                margin-bottom: 3rem;
+                margin-bottom: 2.5rem;
             }
         }
     }
@@ -43,11 +53,6 @@ section {
     @media (min-width: $breakpoint-xl){
         max-width: 1140px;
     }
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
 }
 
 img {
