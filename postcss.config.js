@@ -13,7 +13,8 @@ module.exports = {
         * Remove unused CSS
         */
         purgecss({
-            content: ['./**/*.html']
+            content: ['./**/*.html'],
+            whitelist: ['navbar__nav--active']
         }),
         /*
         * Adds vendor prefixes to css attributes
