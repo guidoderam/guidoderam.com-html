@@ -1,0 +1,76 @@
+.navbar {
+    background-color: $dark;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    margin-bottom: 61px;
+
+    @media (min-width: $breakpoint-sm) {
+        margin-bottom: 0;
+    }
+
+    &__toggle {
+        position: absolute;
+        top: 2px;
+        right: 20px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 2rem;
+
+        @media (min-width: $breakpoint-sm) {
+            display: none;
+        }
+    }
+
+    .container {
+        display: block;
+        @media (min-width: $breakpoint-sm) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__brand {
+        color: $white;
+        display: inline-block;
+        padding-top: 0.275rem;
+        padding-bottom: 0.275rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        text-decoration: none;
+    }
+
+    &__nav {
+        display: none;
+        padding: 0;
+        margin: 0;
+
+        @media (min-width: $breakpoint-sm) {
+            display: flex;
+            margin: 0;
+        }
+
+        &--active {
+            display: block;
+
+            @media (min-width: $breakpoint-sm) {
+                display: flex;
+            }
+        }
+    }
+
+    &__item {
+        list-style: none;
+        text-align: center;
+    }
+
+    &__link {
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}

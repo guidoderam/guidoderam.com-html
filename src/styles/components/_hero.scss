@@ -1,0 +1,42 @@
+
+.hero {
+    display: none;
+    
+    @media (min-width: $breakpoint-md) {
+        display: flex;
+        align-items: center;
+        color: white;
+        background-image: url('./../assets/img/hero.jpg');
+        background-position-x: right;
+        background-position-y: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+
+        .container {
+            justify-content: start;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        
+            h1, h2 {
+                color: white;
+            }
+
+            h1 {
+                font-size: 3.5rem;
+                font-weight: 300;
+                line-height: 1.4;
+            }
+
+            h2 {
+                letter-spacing: 2.2px;
+                margin: 0 0 10px;
+            }
+        }
+    }
+}

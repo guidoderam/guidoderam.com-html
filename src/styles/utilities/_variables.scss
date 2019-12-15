@@ -1,0 +1,39 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+$font-family-primary: "Open Sans", "Raleway", Arial, serif;
+$font-family-headings: "Montserrat", Arial, serif;
+
+// Font Modifiers
+$font-weight-bold: 700;
+
+// Descriptive Base Colors
+$white: #FEFEFE;
+$dark: #1F1F1F;
+
+$firefly: #060F13;
+$stiletto: #A43437;
+$oxford-blue: #3B515C;
+
+// Color Usage
+$color-primary: $stiletto;
+$color-secondary: $oxford-blue;
+
+// Text
+$base__weight: 400;
+$base__font-size: 1rem;
+$base__line: 1.8;
+
+// UI Colors
+$ui-colors: (
+    default: $oxford-blue,
+    warning: $stiletto
+);
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>guidoderam.com</title>
+    <meta name="theme-color" content="#060F13">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,500,600,700|Open+Sans:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar__brand" href="#about">G</a>
+                <ul class="navbar__nav" role="tablist">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#about">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#projects">Projects</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#resume">Resume</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <span id="navbar-toggle" class="icon navbar__toggle">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Guido de Ram</h1>
+                    <h2 class="hero__subtitle">Web developer<h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <div class="heading">
+                            <h1 class="h2">Guido de Ram</h1>
+                            <h2 class="h6">Web developer</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="img-fluid" src="<%= require('./src/assets/img/profile.jpg') %>" alt="">
+                    </div>
+                    <div class="column">
+                        <h5>About</h5>
+                        <p>I'm a web developer from Amsterdam living in NYC. My current focus areas are CSS, Javascript, React and .NET.<br/>
+                            I am passionate about writing clean code and improving my skills as a developer.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h5>My Skills</h5>
+                        <div class="progress-item">
+                            <div class="progress-title">C# / .NET</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-brand" aria-valuenow="90" role="progressbar"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><span class="pb-number-box"
+                                        style="opacity: 1;"><span class="pb-number">90</span>%</span></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-title">HTML / CSS3 / SASS</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-brand" aria-valuenow="70" role="progressbar"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 70%;"><span class="pb-number-box"
+                                        style="opacity: 1;"><span class="pb-number">70</span>%</span></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-title">Javascript / ES6 / TypeScript</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-brand" aria-valuenow="80" role="progressbar"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="pb-number-box"
+                                        style="opacity: 1;"><span class="pb-number">80</span>%</span></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-title">React</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-brand" aria-valuenow="60" role="progressbar"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="pb-number-box"
+                                        style="opacity: 1;"><span class="pb-number">60</span>%</span></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-title">Episerver CMS / Umbraco</div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-brand" aria-valuenow="100" role="progressbar"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="pb-number-box"
+                                        style="opacity: 1;"><span class="pb-number">100</span>%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="column heading">
+                        <h1 class="h2">Contact</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <form class="contact__form">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="name" placeholder="Name" required="">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" name="email" placeholder="E-mail" required="">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="phone" placeholder="Phone" required="">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" placeholder="Message" rows="8" required=""
+                                    style="height: 184px;"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="text-center m-t-20">
+                                    <button class="button button--primary" type="submit"><span>Send Message</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <span class="footer__copyright">© 2019 Guido de Ram</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
