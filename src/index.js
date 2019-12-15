@@ -3,9 +3,16 @@ require('./styles/index.scss');
 
 document.addEventListener("DOMContentLoaded", () => {    
     const navBarToggle = document.getElementById("navbar-toggle");
-
+    const nav = document.getElementsByClassName("navbar__nav")[0];
     navBarToggle.addEventListener("click", () => {
-        const nav = document.getElementsByClassName("navbar__nav");
-        nav[0].classList.toggle("navbar__nav--active");
+        
+        nav.classList.toggle("navbar__nav--active");
+    });
+
+    const navbarLinks = document.querySelectorAll(".navbar__link");
+    navbarLinks.forEach(element => {
+        element.addEventListener("click", () => {
+            nav.classList.remove("navbar__nav--active");
+        });
     });
 });
