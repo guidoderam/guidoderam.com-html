@@ -1,0 +1,39 @@
+#projects {
+    background-color: $gray;
+
+    .project {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    
+        &__title {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .button {
+            width: 100%;
+        }
+
+        p + ul {
+            margin-top: -1rem;
+        }
+    
+        &:nth-of-type(n+3){
+            margin-top: 3rem;
+        }
+
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+
+            .column {
+                flex: 2;
+            }
+    
+            .column + .column {
+                flex: 1;
+                order: -1;
+            }
+        }
+    }
+}
+

@@ -18,10 +18,10 @@
                     <li class="navbar__item">
                         <a class="navbar__link" href="#about">About</a>
                     </li>
-<!--                     <li class="navbar__item">
+                    <li class="navbar__item">
                         <a class="navbar__link" href="#projects">Projects</a>
                     </li>
-                    <li class="navbar__item">
+<!--                     <li class="navbar__item">
                         <a class="navbar__link" href="#resume">Resume</a>
                     </li> -->
                     <li class="navbar__item">
@@ -64,7 +64,7 @@
                         </p>
                     </div>
                     <div class="column">
-                        <h5>My Skills</h5>
+                        <h5>My Core Skills</h5>
                         <div class="progress">
                             <span class="progress__title">HTML / CSS3 / SASS</span>
                             <div class="progress__bar progress__bar--80"></div>
@@ -85,6 +85,48 @@
                             <span class="progress__title">Episerver CMS / Umbraco</span>
                             <div class="progress__bar progress__bar--90"></div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="column heading">
+                        <h1 class="h2">Projects</h1>
+                        <p>I have worked on a variety of .NET, CMS, and Javascript projects. Here are some of my favorites.</p>
+                    </div>
+                </div>
+                <div class="row project">
+                    <div class="column">
+                        <h2 class="project__title">NBA.nl</h2>
+                        <p>I led CMS development for the Dutch Institute of Chartered Accountants corporate site.</p>
+                        <p>Here I:</p>
+                        <ul>
+                            <li>Laid out the backend architecture.</li>
+                            <li>Worked on location with the client to collect requirements and translate them to <strong>Episerver</strong> content models.</li>
+                            <li>Translated HTML templates to content models and <strong>.NET MVC</strong> razor views.</li>
+                            <li>Created an accountancy office locator with <strong>ES6</strong> integrated with Google Maps API, a zip code/location rest api service and NBA’s Microsoft Dynamics CRM API.</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <img class="img-fluid" src="<%= require('./src/assets/img/nba.jpg') %>" alt="The Royal Netherlands Institute of Chartered Accountants" />
+                        <a href="https://www.nba.nl/" target="_blank" class="button button--secondary">View Website</a>
+                    </div>
+                </div>
+
+                <div class="row project">
+                    <div class="column">
+                        <h2 class="project__title">Allianz Online Forms</h2>
+                        <p>For Allianz Global Assistance I developed a forms framework for handling insurance claims.</p>
+                        <p>The frontend is build with plain <strong>Javascript</strong>(ES5) and <strong>KnockoutJS</strong> components.<br/>On the backend <strong>.NET MVC</strong>, <strong>Web API</strong> and <strong>Entity Framework</strong> are used.</p>
+                        <p>Forms are submitted directly to Allianz through their SOAP services, helping them achieve fully automated claim handling.</p>
+                        <p>Gherkin test scenario's are implemented with <strong>SpecFlow</strong> for end-to-end regression testing.</p>
+                    </div>
+                    <div class="column">
+                        <img class="img-fluid" src="<%= require('./src/assets/img/allianz.jpg') %>" alt="Allianz Online Forms" />
+                        <a href="https://forms.allianz-assistance.nl/allianz/nl/aclaim" target="_blank" class="button button--secondary">View Website</a>
                     </div>
                 </div>
             </div>
@@ -117,9 +159,7 @@
                                     style="height: 184px;"></textarea>
                             </div>
                             <div class="form-group">
-                                <div class="text-center m-t-20">
-                                    <button class="button button--primary" type="submit"><span>Send Message</span></button>
-                                </div>
+                                <button class="button button--primary" type="submit"><span>Send Message</span></button>
                             </div>
                         </form>
                     </div>

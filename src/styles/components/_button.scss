@@ -1,8 +1,10 @@
 .button {
     display: inline-block;
     font-weight: 400;
-    color: #060F13;
+    color: $firefly;
     text-align: center;
+    text-decoration: none;
+    width: max-content;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -17,22 +19,20 @@
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
     &--primary {
-        color: #fff;
-        background-color: #A43437;
-        border-color: #A43437;
+        color: $white;
+        background-color: $color-primary;
+        border-color: $color-primary;
     }
 
     &--secondary {
-        color: #fff;
-        background-color: #3B515C;
-        border-color: #3B515C;
+        color: $white;
+        background-color: $color-secondary;
+        border-color: $color-secondary;
     }
 }
 
 button {
     @extend .button;
-
-
 }
 
 button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
