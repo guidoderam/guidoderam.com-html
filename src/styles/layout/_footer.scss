@@ -10,8 +10,15 @@
     }
 
     &__copyright {
+        padding-left: 1rem;
         color: $white;
         flex: 1;
+    }
+
+    &__icons {
+        i.fa {
+            color: $white;
+        }
     }
 
     &__logos {

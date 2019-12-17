@@ -65,3 +65,15 @@ p {
 .heading h1 + h2 {
     margin-top: -1rem;
 }
+
+.icons {
+    @media (min-width: $breakpoint-md) {
+        padding-top: 1rem;
+    }
+}
+
+i.fa {
+    font-size: 2rem;
+    color: $dark;
+    margin-right: 1rem;
+}
